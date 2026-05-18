@@ -88,7 +88,7 @@
   // REPLACE WITH YOUR CLOUDFLARE R2 PUBLIC URL — see setup guide
   const AUDIO_URL='https://pub-695b68d7e5d742cfaf547ff65022c40e.r2.dev/sleep-meditation.mp3';
 
-  const audio=new Audio();audio.preload='metadata';audio.crossOrigin='anonymous';
+  const audio=new Audio();audio.preload='metadata';
   const playBtn=document.getElementById('playBtn'),progressFill=document.getElementById('progressFill'),progressBar=document.getElementById('progressBar'),currentTimeEl=document.getElementById('currentTime'),durationEl=document.getElementById('duration'),loadingMsg=document.getElementById('loadingMsg');
   let hasTrackedPlay=false;
   function formatTime(s){if(isNaN(s))return'0:00';const m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+(sec<10?'0':'')+sec}
