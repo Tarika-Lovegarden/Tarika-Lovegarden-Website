@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deep Sleep Meditation — Tarika Lovegarden</title>
+<meta name="description" content="A ten-minute guided deep sleep meditation by Tarika Lovegarden. Settle the body and quiet the mind for sleep." />
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://tarikalovegarden.com/sleep-meditation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tarikalovegarden.com/sleep-meditation" />
+<meta property="og:title" content="Deep Sleep Meditation — Tarika Lovegarden" />
+<meta property="og:description" content="A ten-minute practice to settle the body and quiet the mind for sleep." />
+<meta property="og:image" content="https://tarikalovegarden.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Deep Sleep Meditation — Tarika Lovegarden" />
+<meta name="twitter:description" content="A ten-minute practice to settle the body and quiet the mind for sleep." />
+<meta name="twitter:image" content="https://tarikalovegarden.com/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet" />
+<!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<style>
+  :root{
+    --bg:#152238;
+    --gold:#9A7A28;--gold-muted:#C9AD6A;--gold-soft:#E8D9B0;
+    --cream:#F0EAD9;--cream-dim:rgba(214,207,194,0.6);--cream-faint:rgba(214,207,194,0.18);
+    --serif:'Cormorant Garamond',Georgia,serif;
+    --sans:'Libre Franklin',-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);font-weight:300;background:var(--bg);color:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  /* Ambient gold haze — barely there, reads as depth */
+  body::before{content:"";position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(154,122,40,0.10) 0%,transparent 70%);pointer-events:none}
+  body::after{content:"";position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(154,122,40,0.07) 0%,transparent 70%);pointer-events:none}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:520px;margin:0 auto;padding:80px 40px;text-align:center;position:relative;z-index:1}
+  .eyebrow{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-muted);display:inline-block;margin-bottom:40px}
+  h1{font-family:var(--serif);font-weight:300;font-size:clamp(40px,5vw,52px);line-height:1.15;color:var(--cream);margin-bottom:14px;letter-spacing:-.01em}
+  .subtitle{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--cream);margin-bottom:14px;max-width:36ch;margin-left:auto;margin-right:auto;line-height:1.5}
+  .duration{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold-muted);margin-bottom:60px}
+  .play-btn{width:96px;height:96px;border-radius:50%;border:1px solid var(--cream);background:var(--cream);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .3s ease;box-shadow:0 4px 24px rgba(240,234,217,.15)}
+  .play-btn:hover{background:#FFF8E5;border-color:#FFF8E5;transform:scale(1.03)}
+  .play-btn:active{transform:scale(.96)}
+  .play-btn svg{width:26px;height:26px;fill:var(--bg);transition:opacity .3s}
+  .play-btn .icon-play{margin-left:4px}
+  .play-btn .icon-pause{display:none}
+  .play-btn.playing .icon-play{display:none}
+  .play-btn.playing .icon-pause{display:block}
+  .progress-wrap{margin-top:36px;padding:0 20px;max-width:280px;margin-left:auto;margin-right:auto}
+  .progress-bar{width:100%;height:2px;background:var(--cream-faint);border-radius:1px;cursor:pointer;position:relative}
+  .progress-fill{height:100%;background:var(--gold-muted);border-radius:1px;width:0%;transition:width .3s linear}
+  .time{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;font-weight:400;letter-spacing:.08em;color:var(--cream-dim)}
+  .loading-msg{font-size:13px;color:var(--cream-dim);font-weight:300;margin-top:16px;opacity:0;transition:opacity .3s;font-style:italic}
+  .loading-msg.visible{opacity:1}
+  .attribution{border-top:1px solid var(--cream-faint);padding-top:32px;margin-top:60px}
+  .attribution a{font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.06em;color:var(--gold-muted);transition:color .2s}
+  .attribution a:hover{color:var(--gold-soft)}
+  @media(max-width:600px){
+    .container{padding:60px 24px}
+    h1{font-size:38px}
+    .play-btn{width:88px;height:88px}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <span class="eyebrow">Tarika Lovegarden</span>
+  <h1>Deep Sleep<br/>Meditation</h1>
+  <p class="subtitle">A ten-minute practice to settle the body and quiet the mind for sleep.</p>
+  <p class="duration">10 minutes</p>
+  <div class="player">
+    <button class="play-btn" id="playBtn" aria-label="Play deep sleep meditation">
+      <svg class="icon-play" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+      <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+    </button>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="time"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+    </div>
+    <p class="loading-msg" id="loadingMsg">loading…</p>
+  </div>
+  <div class="attribution"><a href="https://tarikalovegarden.com">TarikaLovegarden.com</a></div>
+</div>
+<script>
+  // REPLACE WITH YOUR CLOUDFLARE R2 PUBLIC URL — see setup guide
+  const AUDIO_URL='https://pub-695b68d7e5d742cfaf547ff65022c40e.r2.dev/sleep-meditation.mp3';
+
+  const audio=new Audio();audio.preload='metadata';audio.crossOrigin='anonymous';
+  const playBtn=document.getElementById('playBtn'),progressFill=document.getElementById('progressFill'),progressBar=document.getElementById('progressBar'),currentTimeEl=document.getElementById('currentTime'),durationEl=document.getElementById('duration'),loadingMsg=document.getElementById('loadingMsg');
+  let hasTrackedPlay=false;
+  function formatTime(s){if(isNaN(s))return'0:00';const m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+(sec<10?'0':'')+sec}
+  audio.addEventListener('loadedmetadata',()=>{durationEl.textContent=formatTime(audio.duration)});
+  audio.addEventListener('timeupdate',()=>{if(audio.duration){progressFill.style.width=(audio.currentTime/audio.duration*100)+'%';currentTimeEl.textContent=formatTime(audio.currentTime)}});
+  audio.addEventListener('ended',()=>{playBtn.classList.remove('playing');if(typeof gtag==='function'){gtag('event','meditation_complete',{meditation_type:'sleep',meditation_duration:'10min'})}});
+  audio.addEventListener('waiting',()=>{loadingMsg.classList.add('visible')});
+  audio.addEventListener('canplay',()=>{loadingMsg.classList.remove('visible')});
+  playBtn.addEventListener('click',()=>{
+    if(!audio.src){audio.src=AUDIO_URL;loadingMsg.classList.add('visible')}
+    if(audio.paused){audio.play().then(()=>{playBtn.classList.add('playing');loadingMsg.classList.remove('visible');if(!hasTrackedPlay&&typeof gtag==='function'){gtag('event','meditation_play',{meditation_type:'sleep',meditation_duration:'10min'});hasTrackedPlay=true}}).catch(()=>{loadingMsg.textContent='tap again to play';loadingMsg.classList.add('visible')})}
+    else{audio.pause();playBtn.classList.remove('playing')}
+  });
+  progressBar.addEventListener('click',(e)=>{if(audio.duration){const r=progressBar.getBoundingClientRect();audio.currentTime=((e.clientX-r.left)/r.width)*audio.duration}});
+</script>
+</body>
+</html>

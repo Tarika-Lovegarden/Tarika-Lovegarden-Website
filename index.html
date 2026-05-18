@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Tarika Lovegarden — Human Capacity Training for High Achievers | San Francisco Bay Area</title>
+<title>Tarika Lovegarden — Human Capacity Training | San Francisco Bay Area</title>
 <meta name="description" content="Private 1:1 practice for executives and high-achievers. Nervous system regulation, cognitive clarity, and emotional resilience for the demands of a high-performing life. Based in the San Francisco Bay Area." />
 <link rel="canonical" href="https://tarikalovegarden.com/" />
 <meta property="og:type" content="website" />
@@ -19,12 +19,59 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<!-- Structured data for SEO — tells Google what this business is -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://tarikalovegarden.com/#tarika",
+      "name": "Tarika Lovegarden",
+      "url": "https://tarikalovegarden.com/",
+      "jobTitle": "Human Capacity Practitioner",
+      "description": "Meditation teacher and ICF-credentialed coach specializing in nervous system regulation, cognitive clarity, and emotional resilience for high-achieving executives.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "San Francisco Bay Area"
+      },
+      "knowsAbout": [
+        "Meditation",
+        "Nervous System Regulation",
+        "Cognitive Clarity",
+        "Emotional Resilience",
+        "Executive Coaching",
+        "Behavior Change",
+        "Human Capacity Method"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tarikalovegarden.com/#practice",
+      "name": "Tarika Lovegarden — Human Capacity Training",
+      "url": "https://tarikalovegarden.com/",
+      "image": "https://tarikalovegarden.com/og-image.png",
+      "description": "Private 1:1 practice for executives and high-achievers. Nervous system regulation, cognitive clarity, and emotional resilience for the demands of a high-performing life.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "San Francisco Bay Area"
+      },
+      "founder": { "@id": "https://tarikalovegarden.com/#tarika" },
+      "email": "Tarika@TarikaLovegarden.com",
+      "priceRange": "$$$$"
+    }
+  ]
+}
+</script>
 <style>
   :root {
-    --bg: #F6F3EE; --surface: #EDEAE4; --text: #1C2A3A; --text-light: #5E6E7E; --text-muted: #8A96A3;
+    --bg: #F6F3EE; --surface: #EDEAE4; --text: #1C2A3A; --text-light: #3D4A59; --text-muted: #6A7585;
     --navy: #1E3A5F; --navy-deep: #152238; --navy-text: #D6CFC2;
-    --gold: #B8963E; --gold-muted: #C9AD6A; --gold-soft: #E8D9B0;
+    --slate: #3F5060; --slate-light: #4F6072;
+    --gold: #9A7A28; --gold-muted: #C9AD6A; --gold-soft: #E8D9B0;
     --border: #DDD9D0;
+    --radius: 18px; --radius-pill: 999px;
     --serif: 'Cormorant Garamond', Georgia, serif;
     --sans: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
   }
@@ -40,14 +87,16 @@
   h2 { font-size: clamp(32px, 4vw, 44px); }
   h3 { font-size: clamp(22px, 2.4vw, 28px); font-weight: 400; }
   .accent { color: var(--gold-muted); font-style: italic; }
-  .eyebrow { font-family: var(--sans); font-size: 10px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: inline-flex; align-items: center; gap: 14px; }
+  .eyebrow { font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: inline-flex; align-items: center; gap: 14px; }
   .eyebrow::before { content: ""; width: 20px; height: 1px; background: var(--gold); }
-  p { font-size: 17px; line-height: 1.75; color: var(--text); }
-  p.lead { font-size: 19px; line-height: 1.7; color: var(--text-light); }
-  .btn { display: inline-block; font-family: var(--sans); font-size: 13px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; padding: 16px 32px; background: var(--navy); color: #fff; border: 1px solid var(--navy); transition: all 0.25s ease; cursor: pointer; }
-  .btn:hover { background: var(--navy-deep); border-color: var(--navy-deep); }
-  .btn-light { background: var(--gold-soft); color: var(--navy-deep); border-color: var(--gold-soft); }
-  .btn-light:hover { background: var(--gold-muted); border-color: var(--gold-muted); }
+  p { font-size: 18px; line-height: 1.75; color: var(--text); }
+  p.lead { font-size: 21px; line-height: 1.7; color: var(--text); }
+  .btn { display: inline-block; font-family: var(--sans); font-size: 13.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 16px 32px; background: var(--gold); color: #fff; border: 1px solid var(--gold); border-radius: var(--radius-pill); transition: all 0.25s ease; cursor: pointer; }
+  .btn:hover { background: #7E631F; border-color: #7E631F; }
+  .btn-light { background: var(--gold); color: #fff; border-color: var(--gold); }
+  .btn-light:hover { background: #7E631F; border-color: #7E631F; }
+  .btn-outline { background: transparent; color: var(--gold-soft); border: 1.5px solid var(--gold-muted); border-radius: var(--radius-pill); }
+  .btn-outline:hover { background: rgba(201, 173, 106, 0.1); color: var(--gold-soft); }
   .text-link { font-family: var(--sans); font-size: 14px; font-weight: 400; letter-spacing: 0.04em; color: var(--text); border-bottom: 1px solid var(--text); padding-bottom: 2px; transition: opacity 0.2s; }
   .text-link:hover { opacity: 0.65; }
   nav.top { position: sticky; top: 0; z-index: 50; background: rgba(246, 243, 238, 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
@@ -56,8 +105,16 @@
   nav.top ul { display: flex; align-items: center; list-style: none; gap: 36px; }
   nav.top ul a { font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); transition: color 0.2s; }
   nav.top ul a:hover { color: var(--text); }
-  nav.top ul a.nav-cta { background: var(--navy); color: #fff; padding: 12px 22px; letter-spacing: 0.14em; }
-  nav.top ul a.nav-cta:hover { background: var(--navy-deep); color: #fff; }
+  nav.top ul a.nav-cta { background: var(--gold); color: #fff; padding: 12px 22px; letter-spacing: 0.14em; border-radius: var(--radius-pill); font-weight: 500; }
+  nav.top ul a.nav-cta:hover { background: #7E631F; color: #fff; }
+  nav.top li.has-dropdown { position: relative; }
+  nav.top li.has-dropdown > a::after { content: " ▾"; font-size: 9px; opacity: 0.5; }
+  nav.top li.has-dropdown .dropdown { position: absolute; top: calc(100% + 16px); left: 50%; transform: translateX(-50%); background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px 6px; min-width: 220px; opacity: 0; visibility: hidden; transition: all 0.2s ease; box-shadow: 0 8px 24px rgba(28, 42, 58, 0.08); z-index: 60; }
+  nav.top li.has-dropdown:hover .dropdown, nav.top li.has-dropdown:focus-within .dropdown { opacity: 1; visibility: visible; top: calc(100% + 4px); }
+  nav.top li.has-dropdown .dropdown ul { display: block; gap: 0; padding: 0; margin: 0; }
+  nav.top li.has-dropdown .dropdown li { display: block; }
+  nav.top li.has-dropdown .dropdown a { display: block; padding: 10px 18px; text-transform: none; letter-spacing: 0.02em; font-size: 15px; font-family: var(--serif); font-weight: 400; }
+  nav.top li.has-dropdown .dropdown a:hover { background: var(--surface); color: var(--text); }
   .hero { padding: 100px 0 90px; }
   .hero h1 { margin: 28px 0 28px; max-width: 22ch; }
   .hero p.lead { max-width: 56ch; margin-bottom: 44px; }
@@ -78,50 +135,46 @@
   .credentials-band .stat .num { font-family: var(--serif); font-size: clamp(36px, 4vw, 46px); font-weight: 300; color: var(--gold-soft); line-height: 1; margin-bottom: 12px; letter-spacing: -0.005em; }
   .credentials-band .stat .label { font-size: 13.5px; color: var(--navy-text); line-height: 1.6; font-weight: 300; max-width: 32ch; }
   .credentials-band .companies-row { display: flex; align-items: baseline; gap: 28px; flex-wrap: wrap; }
-  .credentials-band .companies-label { font-size: 10px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-muted); flex-shrink: 0; display: inline-flex; align-items: center; gap: 12px; }
+  .credentials-band .companies-label { font-size: 11.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-muted); flex-shrink: 0; display: inline-flex; align-items: center; gap: 12px; }
   .credentials-band .companies-label::before { content: ""; width: 20px; height: 0.5px; background: var(--gold-muted); }
-  .credentials-band .companies { font-size: 13.5px; color: var(--navy-text); letter-spacing: 0.02em; line-height: 1.9; flex: 1 1 320px; min-width: 0; }
-  .credentials-band .companies span { margin: 0 1px; color: rgba(184, 150, 62, 0.55); }
+  .credentials-band .companies { font-size: 14.5px; color: var(--navy-text); letter-spacing: 0.02em; line-height: 1.9; flex: 1 1 320px; min-width: 0; }
+  .credentials-band .companies span { margin: 0 1px; color: rgba(201, 173, 106, 0.55); }
   section.block { padding: 110px 0; }
   .changes .eyebrow { margin-bottom: 40px; }
-  .changes .beat-1 { font-family: var(--serif); font-weight: 300; font-size: clamp(28px, 3.2vw, 38px); line-height: 1.35; color: var(--text); margin-bottom: 28px; max-width: 22ch; }
-  .changes .beat-2 { font-size: 19px; line-height: 1.7; color: var(--text-light); margin-bottom: 28px; max-width: 56ch; }
-  .changes .beat-3 { font-size: 17px; line-height: 1.75; color: var(--text); max-width: 60ch; }
+  .changes .beat-1 { font-family: var(--serif); font-weight: 300; font-size: clamp(30px, 3.4vw, 40px); line-height: 1.35; color: var(--text); margin-bottom: 28px; max-width: 22ch; }
+  .changes .beat-2 { font-size: 21px; line-height: 1.7; color: var(--text); margin-bottom: 28px; max-width: 56ch; }
+  .changes .beat-3 { font-size: 19px; line-height: 1.75; color: var(--text); max-width: 60ch; }
   .method .eyebrow { margin-bottom: 28px; }
   .method h2 { margin-bottom: 14px; max-width: 18ch; }
-  .method .tagline { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--gold-muted); margin-bottom: 60px; }
-  .method .body p { margin-bottom: 24px; max-width: 64ch; }
-  .method .body .recognition { font-family: var(--serif); font-style: italic; font-size: 22px; line-height: 1.55; color: var(--text); border-left: 2px solid var(--gold); padding: 8px 0 8px 24px; margin: 36px 0; max-width: 60ch; }
-  .method .body .declarative { font-family: var(--serif); font-size: 26px; font-weight: 300; line-height: 1.4; color: var(--navy); margin: 28px 0; }
+  .method .tagline { font-family: var(--serif); font-style: italic; font-size: 28px; font-weight: 500; color: #7E631F; margin-bottom: 60px; }
+  .method .body p { margin-bottom: 24px; max-width: 64ch; font-size: 18px; }
+  .method .body .recognition { font-family: var(--serif); font-style: italic; font-size: 24px; line-height: 1.55; color: var(--text); border-left: 2px solid var(--gold); padding: 8px 0 8px 24px; margin: 36px 0; max-width: 60ch; }
+  .method .body .declarative { font-family: var(--serif); font-size: 28px; font-weight: 400; line-height: 1.4; color: var(--navy-deep); margin: 28px 0; }
   .capacities { background: var(--navy-deep); color: var(--navy-text); }
   .capacities .eyebrow { color: var(--gold-muted); margin-bottom: 28px; }
   .capacities .eyebrow::before { background: var(--gold-muted); }
   .capacities h2 { color: var(--gold-soft); margin-bottom: 60px; max-width: 16ch; }
-  .capacities-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(184, 150, 62, 0.18); border: 0.5px solid rgba(184, 150, 62, 0.18); }
-  .capacity { background: var(--navy-deep); padding: 36px 30px 40px; position: relative; }
-  .capacity:nth-child(1) { border-top: 2px solid var(--gold); }
-  .capacity:nth-child(2) { border-top: 2px solid #2A4F7A; }
-  .capacity:nth-child(3) { border-top: 2px solid var(--gold-muted); }
-  .capacity:nth-child(4) { border-top: 2px solid var(--navy); }
-  .capacity .num { font-family: var(--serif); font-size: 22px; font-weight: 300; color: rgba(214, 207, 194, 0.55); letter-spacing: 0.04em; margin-bottom: 16px; }
-  .capacity h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--gold-soft); margin-bottom: 18px; line-height: 1.25; }
-  .capacity p { font-size: 14.5px; line-height: 1.7; color: var(--navy-text); font-weight: 300; }
+  .capacities-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .capacity { background: var(--slate); border-radius: var(--radius); padding: 36px 32px 40px; position: relative; }
+  .capacity .num { font-family: var(--serif); font-size: 22px; font-weight: 300; color: rgba(232, 217, 176, 0.55); letter-spacing: 0.04em; margin-bottom: 14px; }
+  .capacity h3 { font-family: var(--serif); font-size: 26px; font-weight: 400; color: var(--gold-soft); margin-bottom: 16px; line-height: 1.2; }
+  .capacity p { font-size: 15.5px; line-height: 1.75; color: var(--navy-text); font-weight: 300; }
   .practices .eyebrow { margin-bottom: 24px; }
-  .practices .opening { font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--text); margin-bottom: 70px; }
-  .practices h3.practice-title { font-family: var(--serif); font-size: 30px; font-weight: 400; color: var(--navy); margin: 60px 0 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
-  .practices .practice-body p { margin-bottom: 22px; max-width: 64ch; }
-  .pull-quote-piano { background: var(--navy-deep); color: var(--navy-text); padding: 56px 60px; margin: 60px 0; border-left: 3px solid var(--gold); }
-  .pull-quote-piano p { font-family: var(--serif); font-style: italic; font-size: 24px; line-height: 1.55; color: #EDE6D7; max-width: 56ch; margin: 0; }
+  .practices .opening { font-family: var(--serif); font-size: 34px; font-weight: 300; color: var(--text); margin-bottom: 70px; }
+  .practices h3.practice-title { font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--navy-deep); margin: 60px 0 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+  .practices .practice-body p { margin-bottom: 22px; max-width: 64ch; font-size: 18px; }
+  .pull-quote-piano { background: var(--navy-deep); color: var(--navy-text); padding: 56px 60px; margin: 60px 0; border-radius: var(--radius); border-left: 3px solid var(--gold); }
+  .pull-quote-piano p { font-family: var(--serif); font-style: italic; font-size: 25px; line-height: 1.55; color: #EDE6D7; max-width: 56ch; margin: 0; }
   .practices-close { margin-top: 70px; padding-top: 50px; border-top: 1px solid var(--border); }
-  .practices-close h3 { font-family: var(--serif); font-size: 28px; font-weight: 400; color: var(--navy); margin-bottom: 28px; max-width: 22ch; }
-  .practices-close p { margin-bottom: 22px; max-width: 64ch; }
+  .practices-close h3 { font-family: var(--serif); font-size: 30px; font-weight: 400; color: var(--navy-deep); margin-bottom: 28px; max-width: 22ch; }
+  .practices-close p { margin-bottom: 22px; max-width: 64ch; font-size: 18px; }
   .engagement .eyebrow { margin-bottom: 28px; }
   .engagement h2.section-h { margin-bottom: 70px; }
   .engagement .phase { margin-bottom: 80px; }
   .engagement .phase:last-child { margin-bottom: 0; }
-  .engagement .phase h3 { font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--navy); margin-bottom: 8px; }
-  .engagement .phase .meta { font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--gold-muted); margin-bottom: 30px; }
-  .engagement .phase p { margin-bottom: 22px; max-width: 64ch; }
+  .engagement .phase h3 { font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--navy-deep); margin-bottom: 8px; }
+  .engagement .phase .meta { font-family: var(--serif); font-style: italic; font-size: 20px; font-weight: 500; color: #7E631F; margin-bottom: 30px; }
+  .engagement .phase p { margin-bottom: 22px; max-width: 64ch; font-size: 18px; }
   .pull-quote-athlete { background: var(--navy); color: #fff; padding: 50px 56px; margin: 44px 0; border-left: 3px solid var(--gold-muted); }
   .pull-quote-athlete p { font-family: var(--serif); font-style: italic; font-size: 22px; line-height: 1.55; color: #EDE6D7; max-width: 60ch; margin: 0; }
   .cta-mid { background: var(--navy-deep); color: var(--navy-text); text-align: center; padding: 110px 0; }
@@ -132,29 +185,29 @@
   .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 70px; align-items: start; }
   .about .eyebrow { margin-bottom: 24px; }
   .about h2 { margin-bottom: 44px; }
-  .about-photo { background: var(--surface); aspect-ratio: 3 / 4; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; border: 1px solid var(--border); overflow: hidden; }
+  .about-photo { background: var(--surface); aspect-ratio: 3 / 4; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; border: 1px solid var(--border); overflow: hidden; border-radius: var(--radius); }
   .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  .about p { margin-bottom: 22px; max-width: 60ch; }
+  .about p { margin-bottom: 22px; max-width: 60ch; font-size: 18px; }
   .cta-secondary { background: var(--surface); text-align: center; padding: 110px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .cta-secondary h2 { margin-bottom: 24px; }
   .cta-secondary p { max-width: 50ch; margin: 0 auto 40px; color: var(--text-light); font-size: 18px; }
   .physicians { background: var(--bg); }
   .physicians .eyebrow { margin-bottom: 24px; }
   .physicians h2 { margin-bottom: 50px; max-width: 18ch; }
-  .physicians .body p { margin-bottom: 24px; max-width: 64ch; }
-  .physicians h3 { font-family: var(--serif); font-size: 26px; font-weight: 400; color: var(--navy); margin: 48px 0 20px; }
-  .audience-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 60px 0 50px; }
-  .audience-card { background: var(--surface); padding: 40px 36px; border-top: 2px solid var(--gold); }
-  .audience-card h4 { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--navy); margin-bottom: 18px; }
-  .audience-card p { font-size: 16px; line-height: 1.7; color: var(--text-light); margin: 0; }
-  .signature-line { font-family: var(--serif); font-style: italic; font-size: 24px; text-align: center; color: var(--text); padding: 50px 0; margin: 30px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .physicians .body p { margin-bottom: 24px; max-width: 64ch; font-size: 18px; }
+  .physicians h3 { font-family: var(--serif); font-size: 28px; font-weight: 400; color: var(--navy-deep); margin: 48px 0 20px; }
+  .audience-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 60px 0 50px; }
+  .audience-card { background: var(--surface); padding: 40px 36px; border-radius: var(--radius); border-top: 3px solid var(--gold); }
+  .audience-card h4 { font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--navy-deep); margin-bottom: 18px; }
+  .audience-card p { font-size: 16.5px; line-height: 1.7; color: var(--text-light); margin: 0; }
+  .signature-line { font-family: var(--serif); font-style: italic; font-size: 26px; text-align: center; color: var(--text); padding: 50px 0; margin: 30px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .physicians .cta-wrap { text-align: center; margin-top: 40px; }
   .cta-final { background: var(--navy-deep); color: var(--navy-text); padding: 130px 0; text-align: center; }
   .cta-final .eyebrow { color: var(--gold-muted); margin-bottom: 28px; display: inline-flex; }
   .cta-final .eyebrow::before { background: var(--gold-muted); }
   .cta-final h2 { color: var(--gold-soft); font-size: clamp(40px, 5vw, 56px); margin-bottom: 8px; }
-  .cta-final .sub { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--gold-muted); margin-bottom: 36px; }
-  .cta-final p { color: #C9C2B5; max-width: 60ch; margin: 0 auto 44px; font-size: 17px; }
+  .cta-final .sub { font-family: var(--serif); font-style: italic; font-size: 28px; font-weight: 500; color: var(--gold-muted); margin-bottom: 36px; }
+  .cta-final p { color: #C9C2B5; max-width: 60ch; margin: 0 auto 44px; font-size: 18px; }
   .cta-final .actions { display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; }
   .cta-final .text-link { color: var(--gold-soft); border-bottom-color: var(--gold-muted); }
   footer { background: var(--bg); padding: 40px 0; border-top: 1px solid var(--border); }
@@ -168,12 +221,12 @@
   footer .contact a:hover { color: var(--text); }
   @media (max-width: 880px) {
     .container, .container-narrow { padding: 0 24px; }
-    nav.top ul { gap: 18px; }
-    nav.top ul li:nth-child(-n+5) { display: none; }
+    nav.top ul { gap: 14px; }
+    nav.top ul li:nth-child(1), nav.top ul li:nth-child(2), nav.top ul li:nth-child(3), nav.top ul li:nth-child(4) { display: none; }
     .hero { padding: 60px 0 60px; }
     section.block { padding: 70px 0; }
-    .capacities-grid { grid-template-columns: 1fr 1fr; }
-    .capacity { padding: 28px 22px 32px; }
+    .capacities-grid { grid-template-columns: 1fr; }
+    .capacity { padding: 28px 24px 32px; }
     .credentials-band { padding: 48px 0 44px; }
     .credentials-band .stats-row { grid-template-columns: 1fr; gap: 32px; padding-bottom: 36px; }
     .credentials-band .companies-row { display: block; }
@@ -195,12 +248,21 @@
   <div class="container">
     <a href="#" class="logo">Tarika Lovegarden</a>
     <ul>
-      <li><a href="#the-work">The Work</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#engagement">The Engagement</a></li>
-      <li><a href="#about">About</a></li>
+      <li class="has-dropdown">
+        <a href="#the-work">The Work</a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="#the-work">What Changes</a></li>
+            <li><a href="#how-it-works">The Human Capacity Method</a></li>
+            <li><a href="#practices">The Two Practices</a></li>
+            <li><a href="#engagement">The Engagement</a></li>
+          </ul>
+        </div>
+      </li>
       <li><a href="#physicians">For Physicians</a></li>
-      <li><a href="#begin" class="nav-cta">Begin</a></li>
+      <li><a href="/for-teams">For Teams</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://tarikalovegarden.as.me/InitialConversation" class="nav-cta">Consultation</a></li>
     </ul>
   </div>
 </nav>
@@ -211,7 +273,7 @@
     <h1>You've built the life. Now train the system underneath it.</h1>
     <p class="lead">A private practice for high-achievers whose climb is starting to outpace their nervous system — for the sustainable health, sharper performance, and expanded capacity their next chapter requires.</p>
     <div class="actions">
-      <a href="#begin" class="btn">Start a conversation</a>
+      <a href="https://tarikalovegarden.as.me/InitialConversation" class="btn">Schedule a consultation</a>
       <a href="#how-it-works" class="text-link">How this is different →</a>
     </div>
   </div>
@@ -271,12 +333,12 @@
       <div class="capacity"><div class="num">01</div><h3>Nervous System Adaptability</h3><p>The capacity to engage stress when it's useful and release it when it isn't. To recover quickly. To access calm on demand instead of at the mercy of your physiology. Stress isn't the enemy — stuck stress is.</p></div>
       <div class="capacity"><div class="num">02</div><h3>Cognitive Sovereignty</h3><p>The capacity to be the author of your thinking rather than its subject. To notice a worry loop, a rumination, a self-criticism — and step out of it, in real time. Not thinking less. Thinking with intention.</p></div>
       <div class="capacity"><div class="num">03</div><h3>Emotional Drive</h3><p>The capacity to respond rather than react under pressure. To read emotions as information — and use them as fuel — instead of being hijacked by them. To stay present with the people in front of you, even when something hard is moving through you.</p></div>
-      <div class="capacity"><div class="num">04</div><h3>Aligned Action</h3><p>The capacity to live in coherence with what actually matters to you — not in theory, but in how your time, attention, and energy actually move. The gap between knowing and doing closes. Your calendar aligns with your priorities.</p></div>
+      <div class="capacity"><div class="num">04</div><h3>Embodied Action</h3><p>The capacity to live in coherence with what actually matters to you — not in theory, but in how your time, attention, and energy actually move. The gap between knowing and doing closes. Your calendar aligns with your priorities.</p></div>
     </div>
   </div>
 </section>
 
-<section class="block practices">
+<section class="block practices" id="practices">
   <div class="container-narrow">
     <span class="eyebrow">The work itself</span>
     <p class="opening">Two practices woven together.</p>
@@ -324,9 +386,9 @@
 <section class="cta-mid" id="begin">
   <div class="container-narrow">
     <span class="eyebrow">Begin</span>
-    <h2>Begin a conversation.</h2>
+    <h2>Schedule a consultation.</h2>
     <p>Every engagement begins with a conversation. We talk, we see if the work is right, and we begin if it is.</p>
-    <a href="https://tarikalovegarden.as.me/InitialConversation" class="btn btn-light">Begin a conversation →</a>
+    <a href="https://tarikalovegarden.as.me/InitialConversation" class="btn btn-light">Schedule a consultation →</a>
   </div>
 </section>
 
@@ -374,7 +436,7 @@
       <div class="signature-line">The right referral is its own kind of care. I take that seriously.</div>
 
       <div class="cta-wrap">
-        <a href="mailto:Tarika@TarikaLovegarden.com" class="btn">Begin a conversation →</a>
+        <a href="mailto:Tarika@TarikaLovegarden.com" class="btn">Schedule a consultation →</a>
       </div>
     </div>
   </div>
@@ -387,7 +449,7 @@
     <div class="sub">No commitment required.</div>
     <p>I work with a small number of individuals at a time to ensure genuine depth. Every engagement begins the same way — a private conversation to understand what you're navigating, what you've tried, and whether this practice is the right fit. Whether you found this site through your physician, a colleague, or your own search, the next step is the same.</p>
     <div class="actions">
-      <a href="https://tarikalovegarden.as.me/InitialConversation" class="btn btn-light">Start a conversation</a>
+      <a href="https://tarikalovegarden.as.me/InitialConversation" class="btn">Schedule a consultation</a>
       <a href="mailto:Tarika@TarikaLovegarden.com?subject=Physician%20Referral%20Inquiry" class="text-link">I'm a physician exploring a referral</a>
     </div>
   </div>
@@ -398,9 +460,9 @@
     <div class="logo">Tarika Lovegarden</div>
     <div class="links">
       <a href="#the-work">The Work</a><span>·</span>
-      <a href="#how-it-works">How It Works</a><span>·</span>
-      <a href="#about">About</a><span>·</span>
-      <a href="#physicians">For Physicians</a>
+      <a href="#physicians">For Physicians</a><span>·</span>
+      <a href="/for-teams">For Teams</a><span>·</span>
+      <a href="#about">About</a>
     </div>
     <div class="contact"><a href="mailto:Tarika@TarikaLovegarden.com">Tarika@TarikaLovegarden.com</a></div>
   </div>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /morning-meditation
+Disallow: /sleep-meditation
+
+Sitemap: https://tarikalovegarden.com/sitemap.xml
